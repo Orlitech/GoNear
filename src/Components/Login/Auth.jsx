@@ -38,7 +38,7 @@ const Auth = () => {
 
   return (
     <section className="forms-section cover">
-      <h1 className="section-title"><span style={{color:'gold'}}><img src={logo} style={{width:'75px'}} /> </span>Near</h1>
+       <img src={logo} alt="Near Logo"  style={{width:'200px'}}/>
       <div className="forms">
         <div className={`form-wrapper ${isLoginActive ? "is-active" : ""}`}>
           <button
@@ -77,7 +77,7 @@ const Auth = () => {
              
               {SignUpControl.map(SignUpConstructor)}
             </fieldset>
-            <button type="submit" className="btn-signup">Continue</button>
+            <button type="submit" className="btn-signup">Sign up</button>
           </form>
         </div>
       </div>

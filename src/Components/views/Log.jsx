@@ -1,8 +1,9 @@
 import React from 'react'
 import Auth from '../Login/Auth'
+import Header from '../header/Header'
 
 
-const log = () => {
+const Log= () => {
   return (
     <>
         <Auth />
@@ -11,4 +12,4 @@ const log = () => {
   
 }
 
-export default log
+export default Log

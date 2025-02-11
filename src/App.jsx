@@ -1,23 +1,25 @@
-import React from 'react'
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css'
-import Log from '../src/Components/views/Log';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import './App.css';
 import Footer from '../src/Components/footer/Footer';
-import {  Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import ErrorPage from './Components/views/ErrorPage';
-function App() {
- 
-  return (
-    <>
-        <Routes>
-          <Route path='/' element={<Log />} />
-          <Route path='*' element={<ErrorPage />} />
+import Home from './Components/Dashboard/Home';
+import Log from './Components/views/Log';
 
-        </Routes>
-        
-       <Footer />
-    </>
-  )
+function App() {
+  return (
+    <div className='bg-body-tertiary'>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/log' element={<Log />} />
+        <Route path='*' element={<ErrorPage />} />
+      </Routes>
+
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
