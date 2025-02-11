@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const LoginStructure = (props) => {
+const SignUpStructure = (props) => {
   const [showPassword, setShowPassword] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -36,4 +36,4 @@ const LoginStructure = (props) => {
   );
 };
 
-export default LoginStructure;
+export default SignUpStructure;
